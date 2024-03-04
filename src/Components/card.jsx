@@ -1,16 +1,19 @@
 import React from "react";
 import Card from "@mui/material/Card";
 
-const card = (title, text) => {
+const card = (props) => {
+  const msg = props.msg;
+  
   return (
     <div className="card-centre">
+      {msg.map((msg)=>
       <Card sx={{ maxWidth: 345, padding: "40px" }}>
-        <h2>Thank You</h2>
+        <h2>{msg.title}</h2>
         <p>
-          Note that the development build is not optimized. To create a
-          production build
+          {msg.text}
         </p>
       </Card>
+      )}
     </div>
   );
 };
