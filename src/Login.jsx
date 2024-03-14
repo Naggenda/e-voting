@@ -124,3 +124,47 @@ export default function SignInSide() {
     </Container>
   );
 }
+
+// import React, { useState } from "react";
+// import { Navigate, redirect, useNavigate } from "react-router-dom";
+
+// function Login () {
+//   const [email, setEmail] = useState();
+//   const [password, setPassword] = useState();
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log({
+//       email: (email),
+//       password: (password),
+//     });
+
+//     if(password === '12qwerty' && email === 'nag@gmail.com'){
+//       alert('login sucess');
+      
+//     }
+//     else{
+//       alert('invalid email or password');
+//     }
+//   };
+//   return (
+//     <div>
+//       <form onSubmit={handleSubmit}>
+//         <label htmlFor="email">Enter Email Address</label>
+//         <input
+//           type="email"
+//           placeholder="email"
+//           onChange={(e) => setEmail(e.target.value)}
+//         />
+//         <input
+//           type="password"
+//           placeholder="password"
+//           onChange={(e) => setPassword(e.target.value)}
+//         />
+//         <button type="submit">Login</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default Login;

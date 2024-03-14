@@ -1,10 +1,12 @@
 import React from 'react';
-import Thankyou from '../thankyou';
+import SideBar from '../../LayOut/sidebar';
+import Radiobtn from '../../Components/Radiobtn';
 
 const index = () => {
   return (
-    <div>
-      <Thankyou />
+    <div style={{display: 'flex'}}>
+      <SideBar />
+      <Radiobtn />
     </div>
   )
 }
