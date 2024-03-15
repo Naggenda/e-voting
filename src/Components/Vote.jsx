@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Radiobtn from "./Radiobtn";
 
 const Vote = () => {
-  const [candidate, setCandidate] = useState([
+  const [candidates, setCandidates] = useState([
     {
       title: "PRESIDENTIAL CANDIDATES",
       values: [
@@ -28,8 +28,7 @@ const Vote = () => {
 
   ]);
   return <div>
-    <Radiobtn candidate = {candidate}/>
+    <Radiobtn candidates={candidates} />
   </div>;
 };
-
 export default Vote;

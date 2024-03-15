@@ -4,5 +4,11 @@
             "title": "Thank You",
             "message": "its great preasure to have you on this platiform"
         }
+    ],
+    "user": [
+        {
+            "email": "",
+            "password": "123qwerty"
+        }
     ]
 }
